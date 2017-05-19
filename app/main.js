@@ -1,7 +1,8 @@
 define(['dc', 'crossfilter'], function (dc, crossfilter) {
 
     console.log(dc)
-    
+    console.log(crossfilter) // undefined 
+
     var chart = dc.barChart("#dc-chart");
     d3.csv("morley.csv", function(error, experiments) {
         experiments.forEach(function(x) {
